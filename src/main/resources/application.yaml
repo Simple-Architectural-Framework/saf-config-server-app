@@ -1,0 +1,21 @@
+server:
+  port: 8761
+spring:
+  main:
+    web-application-type: servlet
+  pid:
+    application.pid
+  application:
+    name: saf-config-server
+  profiles:
+    active:
+      {profile}
+  cloud:
+    config:
+      server:
+        prefix: /config
+        git:
+          uri: https://github.com/aa-cmd/{application}
+          defaultLabel: master
+          
+
