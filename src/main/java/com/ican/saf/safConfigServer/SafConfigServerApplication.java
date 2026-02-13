@@ -3,6 +3,7 @@ package com.ican.saf.safConfigServer;
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
@@ -11,7 +12,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 public class SafConfigServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SafConfigServerApplication.class, args);
+        var app = new SpringApplication(SafConfigServerApplication.class);
+        app.addListeners(new ApplicationPidFileWriter());
+        app.run(args);
     }
 
 }
