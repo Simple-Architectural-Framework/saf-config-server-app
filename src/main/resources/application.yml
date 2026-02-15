@@ -24,4 +24,8 @@ spring:
               pattern: saf*bff*
               uri: https://github.com/Simple-Architectural-Framework/saf-ui-config
               force-pull: true
+            safms:
+              pattern: saf*mini-service*
+              uri: https://github.com/Simple-Architectural-Framework/saf-mini-service-config
+              force-pull: true
 
