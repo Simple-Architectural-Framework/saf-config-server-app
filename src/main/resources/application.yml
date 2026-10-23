@@ -17,7 +17,8 @@ spring:
         git:
           uri: https://github.com/Simple-Architectural-Framework/{application}
           defaultLabel: master
-          username: aa-cmd
+#          username: aa-cmd
+          username: x-access-token
           force-pull: true
           repos:
             safui:

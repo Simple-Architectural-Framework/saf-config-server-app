@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          password: ENC(6V424Y+bjbJlW8+4RcTwceM7Fl6Bcxo7N4CQaBVqHKcDVykM/By50FlnW+CdYr470TU2J1Aum3WhqDeKY599iGmkXrRMy2MPHzmfMYXUim/YdiE8MN/vkqpF/vDF6BaK6RApq0VW8/Y=)
+          password: ENC(GOu/rgOdLR5YYSR9y1eQKAgPJoxpUiQROPrH9TOkltsyDXC+RFpO6hAi0COpUxHczDUmUESzYab6yEHtfaeqaWv8rrTdEGkH9GxuklJ8/UdhXF5VpQvZWm7OTzaK1Z+YdMWJbqXKHro=)
 
 jasypt:
   encryptor:
