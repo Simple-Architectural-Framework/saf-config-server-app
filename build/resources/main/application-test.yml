@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          password: ENC(GOu/rgOdLR5YYSR9y1eQKAgPJoxpUiQROPrH9TOkltsyDXC+RFpO6hAi0COpUxHczDUmUESzYab6yEHtfaeqaWv8rrTdEGkH9GxuklJ8/UdhXF5VpQvZWm7OTzaK1Z+YdMWJbqXKHro=)
+
+jasypt:
+  encryptor:
+    password: Tfze5g7m5o5/0otEd9qPWF+rrLVd1iOI
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    algorithm: PBEWithMD5AndDES

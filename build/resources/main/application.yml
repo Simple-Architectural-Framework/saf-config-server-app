@@ -1,0 +1,32 @@
+server:
+  port: 8761
+spring:
+  main:
+    web-application-type: servlet
+  pid:
+    file: application.pid
+  application:
+    name: saf-config-server
+  profiles:
+    active:
+      {profile}
+  cloud:
+    config:
+      server:
+        prefix: /config
+        git:
+          uri: https://github.com/Simple-Architectural-Framework/{application}
+          defaultLabel: master
+#          username: aa-cmd
+          username: x-access-token
+          force-pull: true
+          repos:
+            safui:
+              pattern: saf*bff*
+              uri: https://github.com/Simple-Architectural-Framework/saf-ui-config
+              force-pull: true
+            safms:
+              pattern: saf*mini-service*
+              uri: https://github.com/Simple-Architectural-Framework/saf-mini-service-config
+              force-pull: true
+
